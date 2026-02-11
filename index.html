@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lietuviški patiekalai</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f1ec;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 20px auto;
+        }
+
+        header {
+            background-color: #e8e1d8;
+            padding: 20px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #d6ccc2;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        section {
+            background-color: #ffffff;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #d6ccc2;
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .gallery-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .gallery-item p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #d6ccc2;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #e8e1d8;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        button {
+            background-color: #7a5af5;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Lietuviški patiekalai</h1>
+    </header>
+
+    <section>
+        <h2>Apie</h2>
+        <p>
+            Lietuviška virtuvė pasižymi sotumu ir paprastais, vietiniais ingredientais.
+            Populiariausi patiekalai – <strong>cepelinai</strong>, <strong>šaltibarščiai</strong> ir <strong>kugelis</strong>.
+            Žemiau rasi trumpą pristatymą, nuotraukų galeriją, ingredientų lentelę bei kontaktų formą.
+        </p>
+    </section>
+
+    <section>
+        <h2>Galerija</h2>
+        <p>Keletas žinomų lietuviškų patiekalų:</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="cepelinai.jpg" alt="Cepelinai">
+                <p>Cepelinai</p>
+            </div>
+            <div class="gallery-item">
+                <img src="saltibarsciai.jpg" alt="Šaltibarščiai">
+                <p>Šaltibarščiai</p>
+            </div>
+            <div class="gallery-item">
+                <img src="kugelis.jpg" alt="Kugelis">
+                <p>Kugelis</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ingredientai</h2>
+        <p>Šioje lentelėje – pagrindiniai tradicinio kugelio ingredientai ~4 porcijoms.</p>
+
+        <table>
+            <tr>
+                <th>Ingredientas</th>
+                <th>Kiekis</th>
+            </tr>
+            <tr>
+                <td>Bulvės</td>
+                <td>1.5 kg</td>
+            </tr>
+            <tr>
+                <td>Kiaušiniai</td>
+                <td>3 vnt.</td>
+            </tr>
+            <tr>
+                <td>Šoninė</td>
+                <td>150 g</td>
+            </tr>
+            <tr>
+                <td>Svogūnas</td>
+                <td>1 vnt.</td>
+            </tr>
+            <tr>
+                <td>Pienas arba grietinėlė</td>
+                <td>200 ml</td>
+            </tr>
+            <tr>
+                <td>Druska, pipirai</td>
+                <td>pagal skonį</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Kontaktų forma</h2>
+        <p>Turite klausimų ar pasiūlymų apie lietuviškus patiekalus? Parašykite:</p>
+
+        <form>
+            <div class="form-group">
+                <label>Vardas</label>
+                <input type="text" placeholder="Jūsų vardas">
+            </div>
+
+            <div class="form-group">
+                <label>El. paštas</label>
+                <input type="email" placeholder="vardas@pastas.lt">
+            </div>
+
+            <div class="form-group">
+                <label>Tema</label>
+                <select>
+                    <option>Receptų klausimas</option>
+                    <option>Bendras klausimas</option>
+                    <option>Pasiūlymas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Žinutė</label>
+                <textarea placeholder="Trumpai aprašykite klausimą..."></textarea>
+            </div>
+
+            <button type="submit">Siųsti</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Lietuviški patiekalai • Mokomasis pavyzdys
+    </footer>
+
+</div>
+
+</body>
+</html>
